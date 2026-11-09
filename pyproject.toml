@@ -1,0 +1,37 @@
+[project]
+name = "neural-avalanches"
+version = "0.1.0"
+description = "Analysis of neural avalanches and criticality in in vitro neural networks"
+readme = "README.md"
+authors = [
+    { name = "Daniel Fernández", email = "295798876+danielfdez-ds@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "polars>=2.1.0",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+neural-avalanches = "neural_avalanches:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "B", "UP"]
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "nbstripout>=0.9.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
