@@ -24,4 +24,4 @@ neural-avalanches/├── data/           # raw + processed (not in git)
                   └── pyproject.toml  # dependencies and config
 ```
 ## License
-TBD.
+MIT — see [LICENSE](LICENSE).
