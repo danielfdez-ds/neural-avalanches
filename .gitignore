@@ -9,7 +9,7 @@ dist/
 .mypy_cache/
 .ruff_cache/
 
-# ===== Entornos virtuales =====
+# ===== Virtual Environment =====
 .venv/
 venv/
 env/
@@ -18,14 +18,13 @@ env/
 .ipynb_checkpoints/
 *.ipynb_meta
 
-# ===== Datos (no commitear datasets grandes) =====
+# ===== Data (keep structure + provenance docs, ignore contents) =====
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
-!data/README.md
 
-# ===== Secretos =====
+# ===== Secrets =====
 .env
 *.pem
 *.key
